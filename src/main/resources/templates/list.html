@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+<div>
+    <div th:each="prod : ${lists}">
+        <span th:text="${prod.getName()}"></span>
+        <span th:text="${prod.getSurname()}"></span>
+        <span th:text="${prod.getTelephone()}"></span>
+    </div>
+
+</div>
+</body>
+</html>

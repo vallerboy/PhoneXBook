@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book</title>
+</head>
+<body>
+
+<form action="/phonebook" method="post">
+    <h1>Twoje kontakty:</h1>
+    <h2>Podaj dane:</h2>
+    Podaj imię: <input type="text" name="name" required>
+    <br/><br/>
+    Podaj nazwisko: <input type="text" name="surname" required><br/>
+    <br/><br/>
+    Podaj numer telefonu: <input type="text" name="telephone" required><br/>
+    <br/><br/>
+    <input type="submit" value="Wyślij">
+</form>
+<h1><a href="/list">Zobacz kontakty</a></h1>
+
+</body>
+</html>
