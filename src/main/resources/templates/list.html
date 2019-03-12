@@ -6,10 +6,19 @@
 </head>
 <body>
 <div>
+
+    <form action="/list/filter" method="post">
+        Fraza: <input type="text" name="key">
+        <input type="submit" value="Wyślij">
+    </form>
+
+
     <div th:each="prod : ${lists}">
         <span th:text="${prod.getName()}"></span>
         <span th:text="${prod.getSurname()}"></span>
         <span th:text="${prod.getTelephone()}"></span>
+
+        <a th:href="'/delete/' + ${prod.getTelephone()}">Usuń</a>
     </div>
 
 </div>
